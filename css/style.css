@@ -1,6 +1,37 @@
+
+
+/*Formatação do body*/
 body{
     background: url(../img/capa.png),
                 url(../img/ruido.png),
                 linear-gradient(50deg, #ff4169, #7c26f8);
                 background-attachment:fixed ; /** ISso faz com que o background fique fixo e não dessa junto com o scroll*/
+}
+
+/** Formatação da barra de navegação**/
+
+nav.navbar-trasnparente {
+    padding: 15px 0px;
+    background: rgba(0,0,0,0.6);
+}
+
+/** As vezes o bootstrap é muito especifico vale a pena inspecionar o elemento para ver extamente oq ele é para poder sobreescrever as formatações do bootstrap**/
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #9bf0e1;
+}
+
+/** Formatação do botão bootstrap*/
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: rgba(255,255,255,.1) ;
+}
+
+.divisor {
+    width: 1px;
+    margin: 12px 15px;
+    background: white;
 }
