@@ -16,6 +16,13 @@
     <!--Estilo css-->
     <link rel="stylesheet" href="../css/style.css">
 
+    <!--Normalize CSS-->
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+
 </head>
 
 <body>
@@ -33,7 +40,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="nav-menu">
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ml-auto"> <!--Inicio navbar-->
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Premium</a>
                         </li>
@@ -52,40 +59,190 @@
                             <a class="nav-link" href="index.html">Entrar</a>
                         </li>
 
-                    </ul>
+                    </ul><!--/FIM navbar-->
 
 
                 </div>
 
             </div>
         </nav>
-    </header><!--Fim cabeçalho-->
+    </header><!--/Fim cabeçalho-->
+
+    <section id="home" class="d-flex "><!--home-->
+        <div class="container align-self-center capa"><!--container-->
+            <!--O align-self-center, é para centralizar na horizontal, e a classe capa tem um texto-align center, assim deixando tudo centralizado-->
+            <div class="row"><!--row-->
+                <div class="col-md-12">
+
+                    <div id="carousel-spotify" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner"> <!--inner-->
+                            <div class="carousel-item active">
+                                <h1 class="display-1">Música para todos</h1>
+                                <a href="index.html" class="btn btn-custom btn-roxo  btn-lg">
+                                    Aproveite o Spotify Free
+                                </a>
+                                <a href="index.html" class="btn btn-custom btn-branco btn-lg">
+                                    Obter Spotify Premium
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <h1 class="display-1">As melhores rádios</h1>
+                                <a href="index.html" class="btn btn-custom btn-branco btn-lg">
+                                   <i class="fas fa-music"></i> Ouça agora
+                                </a>
+                            </div>
+                        </div><!--/inner-->
+                        <!--controles-->
+                        <a href="#carousel-spotify" class="carousel-control-prev" data-slide="prev">
+                            <i class="fas fa-angle-left fa-3x "></i>
+                        </a>
+                        <a href="#carousel-spotify" class="carousel-control-next" data-slide="next">
+                            <i class="fas fa-angle-right fa-3x "></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div><!--/row-->
+        </div><!--/container-->
+    </section><!--/fim da home-->
+
+    <section id="servicos" class="caixa"><!--Serviços-->
+        <div class="container"><!--container-->
+            <div class="row">
+                <div class="col-md-6 d-none d-md-block ">
+                    <div class="row mb-4"> <!--Row das imagens-->
+                        <div class="col-md-12 col-lg-6">
+                            <img class="img-fluid" src="../img/img1.jpg">
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-block">
+                            <img src="../img/img2.jpg" class="img-fluid">
+                        </div>
+                    </div><!--/row das imagens-->
+                    <div class="row"> <!--Row das imagens-->
+                        <div class="col-md-12 col-lg-6">
+                            <img class="img-fluid" src="../img/img3.jpg">
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-block ">
+                            <img src="../img/img4.jpg" class="img-fluid">
+                        </div>
+                    </div><!--/row das imagens-->
+                </div>
+                <div class="col-md-6">
+
+                    <h2>O que o Spotify tem? </h2>
+
+                    <h3>Músicas</h3>
+                    <p>
+                        Ouça milhões de músicas dos mais variados estilos e artistas. Descubra novos lançamentos, crie
+                        playlists personalizadas e aproveite o melhor da música onde e quando quiser.
+                    </p>
+
+                    <h3>Playlists</h3>
+                    <p>
+                        Encontre playlists para todos os momentos: festas, estudos, relaxamento ou exercícios. Explore
+                        seleções criadas por especialistas e usuários, ou crie suas próprias listas para compartilhar
+                        com amigos.
+                    </p>
+
+                    <h3>Novos lançamentos</h3>
+                    <p>
+                        Fique por dentro dos lançamentos mais recentes dos seus artistas favoritos e descubra novidades
+                        todos os dias. O Spotify atualiza constantemente seu catálogo para que você nunca perca uma nova
+                        música ou álbum.
+                    </p>
+
+                </div>
+            </div><!--/row-->
+        </div><!--/container-->
+    </section><!--/Serviços-->
+
+    <section id="recursos" class="caixa"><!--Recursos-->
+        <div class="container"><!--container-->
+            <div class="row"><!--Row texto imagem-->
+                <div class="col-lg-4 col-md-6">
+                    <h2>Facil</h2>
+
+                    <h3>Buscar</h3>
+                    <p>
+                        Busque músicas, artistas ou álbuns rapidamente usando a barra de pesquisa do Spotify.
+                    </p>
+
+                    <h3>Navegar</h3>
+                    <p>
+                        Explore gêneros, artistas e playlists facilmente. Encontre novas músicas de forma simples e
+                        intuitiva.
+                    </p>
+
+                    <h3>Descobrir</h3>
+                    <p>
+                        Descubra músicas e artistas novos com recomendações personalizadas do Spotify. Ou relaxe e curta
+                        um radio
+                    </p>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="row rotacionar"><!--row imagem-->
+                        <div class="col-lg-6 d-none d-block"><img src="../img/iphone1.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-block"><img src="../img/iphone2.png" alt="" class="img-fluid">
+                        </div>
+                    </div><!--/row imagem-->
+                </div>
+            </div><!--/Row texto imagem-->
+        </div><!--/container-->
+    </section><!--/Recursos-->
 
 
-    <p>Conteudo</p>
-    <p>Conteudo</p>
-    <p>Conteudo</p>
-    <p>Conteudo</p>
-    <p>Conteudo</p>
-    <p>Conteudo</p>
-    <p>Conteudo</p>
-    <p>Conteudo</p>
-    <p>Conteudo</p>
-    <p>Conteudo</p>
-    <p>Conteudo</p>
-    <p>Conteudo</p>
-    <p>Conteudo</p>
-    <p>Conteudo</p>
-    <p>Conteudo</p>
-    <p>Conteudo</p>
-    <p>Conteudo</p>
-    <p>Conteudo</p>
-    <p>Conteudo</p>
-    <p>Conteudo</p>
-    <p>Conteudo</p>
-    <p>Conteudo</p>
-    <p>Conteudo</p>
-
+    <footer><!--Rodapé-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img src="../img/spotify.svg" class="img-fluid" width="142">
+                        </div>
+                        <div class="col-sm-3">
+                            <h4>Company</h4>
+                            <ul class="navbar-nav">
+                                <li><a href="">Sobre</a></li>
+                                <li><a href="">Empregos</a></li>
+                                <li><a href="">Imprensa</a></li>
+                                <li><a href="">Novidades</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4>Comunidades</h4>
+                            <ul class="navbar-nav">
+                                <li><a href="">Artistas</a></li>
+                                <li><a href="">Desenvolvedores</a></li>
+                                <li><a href="">Marcas</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4>Links Uteis</h4>
+                            <ul class="navbar-nav">
+                                <li><a href="">Ajuda</a></li>
+                                <li><a href="">Presentes</a></li>
+                                <li><a href="">Player da Web</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="redes-d col-md-4">
+                    <ul>
+                        <li>
+                            <a href=""><img src="../img/facebook.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/twitter.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/instagram.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/Rodapé-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -1,18 +1,31 @@
+/***Formatações do html e body***/
+
+html,
+body,
+#home {
+    height: 100%;
+    /**Assim vai ocupar a tela toda*/
+    overflow-x: hidden;
+    /*para esconder a barra de rolagem na horizontal e assim não dando para ir para o lado*/
+}
+
 
 
 /*Formatação do body*/
-body{
+body {
     background: url(../img/capa.png),
-                url(../img/ruido.png),
-                linear-gradient(50deg, #ff4169, #7c26f8);
-                background-attachment:fixed ; /** ISso faz com que o background fique fixo e não dessa junto com o scroll*/
+        url(../img/ruido.png),
+        linear-gradient(50deg, #ff4169, #7c26f8);
+    background-attachment: fixed;
+    /** ISso faz com que o background fique fixo e não dessa junto com o scroll*/
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 /** Formatação da barra de navegação**/
 
 nav.navbar-trasnparente {
     padding: 15px 0px;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
 }
 
 /** As vezes o bootstrap é muito especifico vale a pena inspecionar o elemento para ver extamente oq ele é para poder sobreescrever as formatações do bootstrap**/
@@ -26,12 +39,198 @@ nav.navbar-trasnparente {
 
 /** Formatação do botão bootstrap*/
 .navbar-light .navbar-toggler {
-    color: rgba(0,0,0,.5);
-    border-color: rgba(255,255,255,.1) ;
+    color: rgba(0, 0, 0, .5);
+    border-color: rgba(255, 255, 255, .1);
 }
 
 .divisor {
     width: 1px;
     margin: 12px 15px;
     background: white;
+}
+
+/*******CAPA******/
+
+.capa {
+    text-align: center;
+}
+
+.btn-custom {
+    color: white;
+    border-radius: 500px;
+    -moz-border-radius: 500px;
+    -webkit-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.btn-roxo {
+    background: #7c26f8;
+}
+
+.btn-roxo:hover {
+    background: #6207e3;
+    color: white;
+}
+
+.btn-branco {
+    border: 2px solid white;
+}
+
+.btn-branco:hover {
+    background: white;
+    color: black;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 5%;
+}
+
+
+/*****Estrutura de contéudos *********/
+
+.caixa {
+    padding: 30px 0;
+}
+
+#servicos {
+    background: white;
+}
+
+#servicos h2,
+#servicos h3 {
+    /******fazendo assim somente os que tiverem dentro de serviços vão mudar de cor******/
+    color: #7c26f8;
+}
+
+#recursos {
+    color: white;
+}
+
+#recursos h2,
+#recursos h3 {
+    color: #9bf0e1;
+}
+
+.rotacionar {
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    /**para rodar o elemento*/
+    padding-left: 80px;
+}
+
+/****rodape***/
+
+footer {
+    background: #000;
+    padding: 50px 0 20px 0;
+    position: relative;
+    /**** pro footer ficar por cima da imagem ***/
+}
+
+footer h4 {
+    color: #919496;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+    color: white;
+    font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover {
+    color: #9bf0e1;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    float: right;
+    margin: 0 5px;
+}
+
+
+/****Tipografia ****/
+h1,
+h1.display-1 {
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 2.5rem;
+    /* Tamanho padrão para telas pequenas */
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+
+
+
+/******media querry ******/
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .btn-custom {
+        margin: 5px 15px;
+        font-size: 1em;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    h1,
+    h1.display-1 {
+        font-size: 3rem;
+    }
+
+    .btn-custom {
+        margin: 10px 15px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    h1,
+    h1.display-1 {
+        font-size: 4rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    h1,
+    h1.display-1 {
+        font-size: 5rem;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    h1,
+    h1.display-1 {
+        font-size: 6rem;
+    }
 }
