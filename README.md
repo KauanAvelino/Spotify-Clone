@@ -3,7 +3,7 @@
 Este é um projeto front-end que simula a página inicial do **Spotify**, desenvolvido com foco em responsividade e design moderno, utilizando **Bootstrap 4** e **Font Awesome**.
 
 ## 📸 Prévia do Projeto
-🔗 [Clique aqui para acessar o projeto](https://spotify-clone.vercel.app)
+🔗 [Clique aqui para acessar o projeto](https://spotify-clone-ashen-delta.vercel.app)
 
 ## 🛠 Tecnologias utilizadas
 
